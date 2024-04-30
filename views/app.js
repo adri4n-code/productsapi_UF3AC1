@@ -21,11 +21,11 @@ app.use('/', products_routes)
 
 
 app.listen(port, () => {
-    const port = 5000;
-     const bienvenida = 'server is listening on port 5000';
-    const slugifiedMessage = slugify(bienvenida, { replacement: '*', lower: true });
-    console.log(slugifiedMessage);
-  console.log(`Server is listening on port ${port}`);
+    
+    let bienvenida = 'server is listening on port 5000';
+    bienvenida = bienvenida .replace(/ +/g, '*');
+    let slugifiedMessage = slugify(bienvenida, { replacement: '*', lower: true });
+    console.log(bienvenida);
 });
 
 zº
