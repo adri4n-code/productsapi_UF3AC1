@@ -24,6 +24,8 @@ const slugifiedMessage = slugify(bienvenida, { replacement: '*', lower: true });
 console.log(slugifiedMessage);
 
 app.listen(port, () => {
+    console.log(slugifiedMessage);
+
   console.log(`Server is listening on port ${port}`);
 });
 
