@@ -21,14 +21,9 @@ app.use('/', products_routes)
 
 
 app.listen(5000, () => {
-    
     let bienvenida = 'server is listening on port 5000';
-
     let slugifiedMessage = slugify(bienvenida, { replacement: '*', lower: true });
-  
-      
     console.log(slugifiedMessage);
-  
 });
 
 
