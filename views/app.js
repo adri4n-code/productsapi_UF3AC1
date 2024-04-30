@@ -23,7 +23,7 @@ app.use('/', products_routes)
 app.listen(port, () => {
     
     let bienvenida = 'server is listening on port 5000';
-    bienvenida = bienvenida .replace(/ +/g, '*');
+    bienvenida = bienvenida.replace(/ +/g, '*');
     let slugifiedMessage = slugify(bienvenida, { replacement: '*', lower: true });
     console.log(bienvenida);
 });
