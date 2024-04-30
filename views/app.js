@@ -20,16 +20,13 @@ app.use('/', products_routes)
 // })
 
 
-app.listen(port, () => {
+app.listen(5000, () => {
     
     let bienvenida = 'server is listening on port 5000';
 
-    // Slugifica el mensaje
     let slugifiedMessage = slugify(bienvenida, { replacement: '*', lower: true });
   
-    // Reemplaza espacios con asteriscos
-    slugifiedMessage = slugifiedMessage.replace(/ +/g, '*');
-  
+      
     console.log(slugifiedMessage);
   
 });
