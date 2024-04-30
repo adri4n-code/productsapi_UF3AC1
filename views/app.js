@@ -18,14 +18,13 @@ app.use('/', products_routes)
 // app.listen(5000, () => {
 //     console.log('server is listening on port 5000')
 // })
-const port = 5000;
-const bienvenida = 'server is listening on port 5000';
-const slugifiedMessage = slugify(bienvenida, { replacement: '*', lower: true });
-console.log(slugifiedMessage);
+
 
 app.listen(port, () => {
+    const port = 5000;
+     const bienvenida = 'server is listening on port 5000';
+    const slugifiedMessage = slugify(bienvenida, { replacement: '*', lower: true });
     console.log(slugifiedMessage);
-
   console.log(`Server is listening on port ${port}`);
 });
 
